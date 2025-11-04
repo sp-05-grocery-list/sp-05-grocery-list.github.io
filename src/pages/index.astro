@@ -1,11 +1,34 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>SP-05 Grocery List</title>
+  </head>
+  <body style="font-family: sans-serif; padding: 2rem; max-width: 800px; margin: auto;">
+    <main>
+      <h1>SP-05 Grocery List</h1>
+      <p>
+        A shared grocery list app for collaborative households.
+        Built with Flutter & Supabase, documented here on this site.
+      </p>
+
+      <h2>Project Docs</h2>
+      <ul>
+        <li><a href="/docs/overview">Overview</a></li>
+        <li><a href="/docs/architecture">Architecture</a></li>
+        <li><a href="/docs/design">Design</a></li>
+        <li><a href="/docs/contact">Team & Contact</a></li>
+      </ul>
+
+      <p>
+        View the source on
+        <a href="https://github.com/sp-05-grocery-list/sp-05-grocery-list.github.io" target="_blank">
+          GitHub
+        </a>.
+      </p>
+    </main>
+  </body>
+</html>
