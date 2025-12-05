@@ -5,30 +5,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>SP-05 Grocery List</title>
+    <title>SP-05 Grocery List App</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Everything fits on one screen */
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .team-grid {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+
+      .member {
+        text-align: center;
+      }
+
+      .member img {
+        width: 80px;  /* small bio pic */
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid #555;
+      }
+
+      .links {
+        margin-top: 1rem;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .links a {
+        padding: 0.4rem 0.7rem;
+        border: 1px solid #000;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #000;
+        font-size: 0.9rem;
+      }
+
+      .subtitle {
+        margin-top: 0.3rem;
+        text-align: center;
+      }
+    </style>
   </head>
-  <body style="font-family: sans-serif; padding: 2rem; max-width: 800px; margin: auto;">
-    <main>
-      <h1>SP-05 Grocery List</h1>
-      <p>
-        A shared grocery list app for collaborative households.
-        Built with Flutter & Supabase, documented here on this site.
-      </p>
 
-      <h2>Project Docs</h2>
-      <ul>
-        <li><a href="/docs/overview">Overview</a></li>
-        <li><a href="/docs/architecture">Architecture</a></li>
-        <li><a href="/docs/design">Design</a></li>
-        <li><a href="/docs/contact">Team & Contact</a></li>
-      </ul>
+  <body>
+    <div class="container">
 
-      <p>
-        View the source on
-        <a href="https://github.com/sp-05-grocery-list/sp-05-grocery-list.github.io" target="_blank">
-          GitHub
-        </a>.
-      </p>
-    </main>
+      <!-- Project Header -->
+      <h1>SP-05 (Red Team) – Grocery List App</h1>
+      <div class="subtitle">CS 4850 – Fall 2025</div>
+
+      <!-- Team Bios -->
+      <div class="team-grid">
+        <div class="member">
+          <img src="/tyler.jpg" alt="Tyler Photo" />
+          <div>Tyler Chetty</div>
+        </div>
+
+        <div class="member">
+          <img src="/aman.jpg" alt="Aman Photo" />
+          <div>Aman Bhayani</div>
+        </div>
+
+        <div class="member">
+          <img src="/drew.jpg" alt="Drew Photo" />
+          <div>Drew Claerbout</div>
+        </div>
+
+        <div class="member">
+          <img src="/jose.jpg" alt="Jose Photo" />
+          <div>Jose Garcia</div>
+        </div>
+      </div>
+
+      <!-- Links (PDFs, GitHub, Video) -->
+      <div class="links">
+        <a href="/docs/projectplan.pdf" target="_blank">Project Plan</a>
+        <a href="/docs/designdoc.pdf" target="_blank">Design Document</a>
+        <a href="/docs/requirementdoc.pdf" target="_blank">Requirements</a>
+        <a href="/docs/finalreport.pdf" target="_blank">Final Report</a>
+
+        <a href="https://github.com/AmanCantCode/SP05-Grocery-List.git" target="_blank">GitHub Repo</a>
+        <a href="https://youtube.com" target="_blank">Final Presentation Video</a>
+      </div>
+
+    </div>
   </body>
 </html>
